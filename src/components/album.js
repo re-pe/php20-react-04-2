@@ -1,4 +1,4 @@
-import DivCard from './div-cards';
+import DivCard from './div-card';
 
 export default function Album() {
 
