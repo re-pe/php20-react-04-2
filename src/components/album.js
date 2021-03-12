@@ -1,4 +1,5 @@
 import DivCard from './div-card';
+import data from '../data/data.json';
 
 export default function Album() {
 
@@ -8,8 +9,8 @@ export default function Album() {
 
                 <div className="row">
 
-                    {Array.from(Array(9).keys()).map(
-                        i => <DivCard key={i} />
+                    {data.map(
+                        (itemData, i) => <DivCard key={i} itemData={itemData}/>
                     )}
 
                 </div>
