@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import ScriptTag from 'react-script-tag';
 
@@ -6,9 +7,8 @@ const LoadScripts = (props) => {
     return (
         <>
             {scriptList
-                .map((data, index) => ({ ...data, id: index }))
-                .map((data) => (
-                    <ScriptTag type="text/javascript" key={data.id} src={data.src || ''}>{data.textContent || ''}</ScriptTag>
+                .map((data, index) => (
+                    <ScriptTag type="text/javascript" key={index} src={data.src || ''}>{data.textContent || ''}</ScriptTag>
                 ))}
         </>
     );
