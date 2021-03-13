@@ -1,9 +1,10 @@
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from './components/header';
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
 import Error from './components/error';
-import { Route, Switch } from 'react-router-dom'
 
 export default function App() {
     return (

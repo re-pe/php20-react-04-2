@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function About() {
     return (
         <div className="container">
@@ -9,5 +11,5 @@ export default function About() {
                 Then, link them off to some social networking sites or contact information.
             </p>
         </div>
-    )
+    );
 }

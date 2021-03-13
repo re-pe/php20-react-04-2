@@ -1,5 +1,6 @@
-export default function Jumbotron() {
+import React from 'react';
 
+export default function Jumbotron() {
     return (
         <section className="jumbotron text-center">
             <div className="container">
@@ -12,5 +13,4 @@ export default function Jumbotron() {
             </div>
         </section>
     );
-
 }
