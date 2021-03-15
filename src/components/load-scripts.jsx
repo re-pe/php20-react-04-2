@@ -8,7 +8,9 @@ const LoadScripts = (props) => {
         <>
             {scriptList
                 .map((data, index) => (
-                    <ScriptTag type="text/javascript" key={index} src={data.src || ''}>{data.textContent || ''}</ScriptTag>
+                    <ScriptTag type="text/javascript" key={index} src={data.src || ''}>
+                        {data.textContent || ''}
+                    </ScriptTag>
                 ))}
         </>
     );
